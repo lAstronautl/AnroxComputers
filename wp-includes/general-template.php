@@ -4901,6 +4901,18 @@ function register_admin_color_schemes() {
 	);
 
 	wp_admin_css_color(
+		'anroxcomputers',
+		_x( 'AnroxComputers', 'admin color scheme' ),
+		admin_url( "css/colors/anroxcomputers/colors$suffix.css" ),
+		array( '#0d0d0d', '#161718', '#d21e1e', '#f05a5a' ),
+		array(
+			'base'    => '#d21e1e',
+			'focus'   => '#f05a5a',
+			'current' => '#d21e1e',
+		)
+	);
+
+	wp_admin_css_color(
 		'modern',
 		_x( 'Modern', 'admin color scheme' ),
 		admin_url( "css/colors/modern/colors$suffix.css" ),
