@@ -1,0 +1,89 @@
+@use "sass:color";
+
+// Переменные, отличные от значений по умолчанию
+$base-color: #161718;
+$highlight-color: #f05a5a;
+$notification-color: #d21e1e;
+$body-background: #111111;
+$icon-color: #d21e1e;
+$text-color: #d21e1e;
+$link: #f05a5a;
+$link-focus: #ffffff;
+$button-color: #161718;
+
+@use "../_admin.scss" with (
+	$scheme-name: "anroxcomputers",
+	$base-color: $base-color,
+	$highlight-color: $highlight-color,
+	$notification-color: $notification-color,
+	$body-background: $body-background,
+	$icon-color: $icon-color,
+	$text-color: $text-color,
+	$link: $link,
+	$link-focus: $link-focus,
+	$button-color: $button-color,
+);
+
+h1, h2, h3, h4, h5, h6,
+.wrap h1, .wrap h2, .wrap h3 {
+	color: #d21e1e;
+}
+
+.form-table th, .form-wrap label {
+	color: #d21e1e;
+}
+
+.form-table .description, .form-wrap .description {
+	color: #d21e1e;
+}
+
+body {
+	color: #d21e1e;
+	background: #111111;
+}
+
+button, input, select, textarea {
+	background-color: #111111 !important;
+	color: #d21e1e !important;
+	border: 1px solid #d21e1e !important;
+}
+
+.notice, div.error, div.updated {
+	background: #161718;
+	border: 1px solid #d21e1e;
+	border-left-width: 4px;
+	border-left-color: #d21e1e;
+}
+
+tbody, .alternate, .striped > tbody > :nth-child(odd), ul.striped > :nth-child(odd), .form-table tbody tr {
+	background-color: #161718 !important;
+}
+
+.widefat tfoot tr td, .widefat tfoot tr th, .widefat thead tr td, .widefat thead tr th {
+	color: #d21e1e;
+	background-color: #161718;
+}
+
+.widefat td, .widefat th {
+	color: #d21e1e;
+}
+
+.comment-ays, .feature-filter, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+	border: 1px solid #d21e1e;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.attachments-browser .media-toolbar {
+    background: #111111;
+}
+
+.wp-core-ui .button-primary {
+    background: #161718;
+    border-color: #161718;
+	color: #f05a5a
+}
+
+.plugin-install #the-list td, .plugins .active td, .plugins .active th, .plugins .inactive td, .plugins .inactive th, .upgrade .plugins td, .upgrade .plugins th {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+    background: #111111;
+}

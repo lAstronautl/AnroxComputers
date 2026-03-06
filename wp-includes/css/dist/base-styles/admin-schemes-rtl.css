@@ -117,3 +117,18 @@ body.admin-color-sunrise{
     --wp-admin-border-width-focus:1.5px;
   }
 }
+
+body.admin-color-anroxcomputers{
+  --wp-admin-theme-color:#d21e1e;
+  --wp-admin-theme-color--rgb:210, 30, 30;
+  --wp-admin-theme-color-darker-10:#bd1b1b;
+  --wp-admin-theme-color-darker-10--rgb:189, 27, 27;
+  --wp-admin-theme-color-darker-20:#a81818;
+  --wp-admin-theme-color-darker-20--rgb:168, 24, 24;
+  --wp-admin-border-width-focus:2px;
+}
+@media (min-resolution:192dpi){
+  body.admin-color-anroxcomputers{
+    --wp-admin-border-width-focus:1.5px;
+  }
+}
